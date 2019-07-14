@@ -1,0 +1,18 @@
+.userList {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 2px;
+
+  tr:nth-child(even) {
+    background-color: $c-grey100-hover;
+  }
+
+  thead {
+    background-color: $c-grey100;
+  }
+
+  td {
+    padding: 0.5em 1em;
+    border: 1px solid $c-grey200;
+  }
+}
