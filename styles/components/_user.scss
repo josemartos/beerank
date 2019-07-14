@@ -4,15 +4,19 @@
   border-radius: 2px;
 
   tr:nth-child(even) {
-    background-color: $c-grey100-hover;
+    background-color: $c-grey200-hover;
   }
 
   thead {
-    background-color: $c-grey100;
+    background-color: $c-grey200;
   }
 
   td {
     padding: 0.5em 1em;
-    border: 1px solid $c-grey200;
+    border: 1px solid $c-grey300;
   }
+}
+
+.userList_wrapper {
+  padding-top: 5vh;
 }
