@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
+import Spinner from "./Spinner";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -24,7 +25,9 @@ const UserList = () => {
         </thead>
         <tbody>
           {!users.length ? (
-            <tr colSpan="4">Loading...</tr>
+            <tr colSpan="4">
+              <Spinner />
+            </tr>
           ) : (
             users.map(user => (
               <tr key={user.id}>

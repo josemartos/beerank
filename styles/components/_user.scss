@@ -20,3 +20,20 @@
 .userList_wrapper {
   padding-top: 5vh;
 }
+
+.userDetails {
+  display: flex;
+}
+
+.userDetails_image {
+  width: 300px;
+  height: 300px;
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.userDetails_info {
+  padding: 1em;
+}
