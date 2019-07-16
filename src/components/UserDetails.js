@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Spinner from "./Spinner";
 
 const UserDetails = props => {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users/" + props.id)
-      .then(response => response.json())
-      .then(user => setUser(user));
+    axios
+      .get(`https://jsonplaceholder.typicode.com/users/${props.id}`)
+      .then(({ data: user }) => setUser(user || []));
   }, []);
 
   return (

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
+import axios from "axios";
 import Spinner from "./Spinner";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => response.json())
-      .then(users => setUsers(users));
+    axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then(({ data: users }) => setUsers(users || []));
   }, []);
 
   return (
@@ -25,8 +26,10 @@ const UserList = () => {
         </thead>
         <tbody>
           {!users.length ? (
-            <tr colSpan="4">
-              <Spinner />
+            <tr>
+              <td colSpan="4">
+                <Spinner />
+              </td>
             </tr>
           ) : (
             users.map(user => (
