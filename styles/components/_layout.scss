@@ -25,7 +25,13 @@ a {
   max-width: $m-desktop;
   margin: 0 auto;
   position: relative;
-  padding: 1em;
+  padding: 0 1rem;
+}
+
+.pageTitle {
+  color: $c-black;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .main {

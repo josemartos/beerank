@@ -1,31 +1,53 @@
+// User list section
 .userList {
   width: 100%;
   margin: 0 auto;
-  border-radius: 2px;
-
-  tr:nth-child(even) {
-    background-color: $c-grey200-hover;
-  }
-
-  thead {
-    background-color: $c-grey200;
-  }
-
-  td {
-    padding: 0.5em 1em;
-    border: 1px solid $c-grey300;
-  }
-}
-
-.userList_wrapper {
   padding-top: 5vh;
 }
 
+.userList_item {
+  border-bottom: 1px solid $c-grey100;
+
+  a {
+    color: $c-black;
+    display: flex;
+    border-radius: 2px;
+    align-items: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  a:hover {
+    background-color: $c-grey100;
+    transition: background-color 200ms;
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    height: 60px;
+  }
+}
+
+.userList_item_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+// User details section
 .userDetails {
+  padding-top: 5vh;
+}
+
+.userDetails_content {
   display: flex;
 }
 
-.userDetails_image {
+.userDetails_avatar {
   width: 300px;
   height: 300px;
 
@@ -35,5 +57,5 @@
 }
 
 .userDetails_info {
-  padding: 1em;
+  padding: 1rem;
 }

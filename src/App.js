@@ -9,12 +9,14 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="pageContainer">
-        <Router>
-          <UserList path="/" />
-          <UserDetails path="/userdetails/:id" />
-        </Router>
-      </div>
+      <main>
+        <div className="pageContainer">
+          <Router>
+            <UserList path="/" />
+            <UserDetails path="/userdetails/:id" />
+          </Router>
+        </div>
+      </main>
     </div>
   );
 };

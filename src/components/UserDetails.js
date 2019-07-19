@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Spinner from "./Spinner";
+import avatarLarge from "../../assets/jpg/avatar-large.jpg";
 
 const UserDetails = props => {
   const [user, setUser] = useState([]);
@@ -13,20 +14,24 @@ const UserDetails = props => {
 
   return (
     <div className="userDetails">
-      <div className="userDetails_image">
-        <img src="https://i.pravatar.cc/300" alt={user.name} />
-      </div>
-      <div className="userDetails_info">
-        {!user.name ? (
-          <Spinner />
-        ) : (
-          <div>
-            <h2>
-              {user.username} {user.name}
-            </h2>
-            <p>{user.website}</p>
-          </div>
-        )}
+      <h2 className="pageTitle">Detail page</h2>
+
+      <div className="userDetails_content">
+        <div className="userDetails_avatar">
+          <img src={avatarLarge} alt={user.name} />
+        </div>
+        <div className="userDetails_info">
+          {!user.name ? (
+            <Spinner />
+          ) : (
+            <div>
+              <h3 className="userDetails_title">
+                {user.username} {user.name}
+              </h3>
+              <p>{user.website}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

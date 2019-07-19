@@ -1,7 +1,6 @@
 // Global colors
 $c-white: #fff;
 $c-black: #000;
-$c-blue: #006fc6;
 
 // Greyscale tones
 $c-grey100: #f1f1f1;
@@ -18,10 +17,10 @@ $c-grey600: #111;
 $c-grey600-hover: #888;
 
 // Font
-$font-base: "Dosis", sans-serif;
+$font-base: "Nunito", sans-serif;
 $font-base-size: 16px;
 $font-primary: $c-black;
-$font-link: $c-blue;
+$font-link: #006fc6;
 
 // Breakpoints
 $phone: 575px;

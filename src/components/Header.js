@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="mainHeader">
       <div className="pageContainer">
-        <Link to="/">Home</Link>
+        <Link to="/">Dashboard</Link>
       </div>
     </header>
   );
