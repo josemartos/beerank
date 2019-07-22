@@ -1,15 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FunctionComponent } from "react";
+import { RouteComponentProps, navigate } from "@reach/router";
 import axios from "axios";
 import Spinner from "./Spinner";
+import { IUser } from "../interfaces";
 import avatarLarge from "../../assets/jpg/avatar-large.jpg";
 
-const UserDetails = props => {
-  const [user, setUser] = useState([]);
+interface IProps {
+  id: string;
+}
+
+const UserDetails: FunctionComponent<RouteComponentProps<IProps>> = props => {
+  const [user, setUser] = useState({} as IUser);
 
   useEffect(() => {
+    if (!props.id) {
+      navigate("/");
+      return;
+    }
+
     axios
       .get(`https://jsonplaceholder.typicode.com/users/${props.id}`)
-      .then(({ data: user }) => setUser(user || []));
+      .then(({ data }) => {
+        console.log(data);
+        setUser(data || []);
+      });
   }, []);
 
   return (

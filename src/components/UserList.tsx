@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "@reach/router";
+import React, { useState, useEffect, FunctionComponent } from "react";
+import { Link, RouteComponentProps } from "@reach/router";
 import axios from "axios";
 import Spinner from "./Spinner";
+import { IUser } from "../interfaces";
 import avatarSmall from "../../assets/jpg/avatar-small.jpg";
 
-const UserList = () => {
+const UserList: FunctionComponent<RouteComponentProps> = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const UserList = () => {
           <Spinner />
         </li>
       ) : (
-        users.map(user => (
+        users.map((user: IUser) => (
           <li className="userList_item" key={user.id}>
             <Link to={`/userdetails/${user.id}`} title="See details">
               <img src={avatarSmall} alt={user.name} />
