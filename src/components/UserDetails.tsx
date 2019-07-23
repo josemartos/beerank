@@ -6,23 +6,24 @@ import { IUser } from "../interfaces";
 import avatarLarge from "../../assets/jpg/avatar-large.jpg";
 
 interface IProps {
-  id: string;
+  userId: string;
 }
+
+console.log("YO");
 
 const UserDetails: FunctionComponent<RouteComponentProps<IProps>> = props => {
   const [user, setUser] = useState({} as IUser);
 
   useEffect(() => {
-    if (!props.id) {
+    if (!props.userId) {
       navigate("/");
       return;
     }
 
     axios
-      .get(`https://jsonplaceholder.typicode.com/users/${props.id}`)
-      .then(({ data }) => {
-        console.log(data);
-        setUser(data || []);
+      .get(`https://jsonplaceholder.typicode.com/users/${props.userId}`)
+      .then(({ data: userInfo }) => {
+        setUser(userInfo || []);
       });
   }, []);
 

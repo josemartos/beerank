@@ -11,7 +11,9 @@ const UserList: FunctionComponent<RouteComponentProps> = () => {
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/users")
-      .then(({ data: users }) => setUsers(users || []));
+      .then(({ data: userList }) => {
+        setUsers(userList || []);
+      });
   }, []);
 
   return (

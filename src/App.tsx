@@ -16,7 +16,7 @@ const App = () => {
           <div className="pageContainer">
             <Router>
               <UserList path="/" />
-              <UserDetails path="/userdetails/:id" />
+              <UserDetails path="/userdetails/:userId" />
             </Router>
           </div>
         </Suspense>
