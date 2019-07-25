@@ -3,13 +3,11 @@ import { RouteComponentProps, navigate } from "@reach/router";
 import axios from "axios";
 import Spinner from "./Spinner";
 import { IUser } from "../interfaces";
-import avatarLarge from "../../assets/jpg/avatar-large.jpg";
+import avatarLarge from "/assets/jpg/avatar-large.jpg";
 
 interface IProps {
   userId: string;
 }
-
-console.log("YO");
 
 const UserDetails: FunctionComponent<RouteComponentProps<IProps>> = props => {
   const [user, setUser] = useState({} as IUser);
