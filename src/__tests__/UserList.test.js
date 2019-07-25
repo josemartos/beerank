@@ -6,9 +6,7 @@ import { render, cleanup, act } from "@testing-library/react";
 import UserList from "../components/UserList";
 
 const users = JSON.parse(
-  readFileSync(
-    path.join(__dirname, "/../../__fixtures__/users.json")
-  ).toString()
+  readFileSync(path.join(__dirname, "/fixtures/users.json")).toString()
 );
 
 beforeAll(() => {

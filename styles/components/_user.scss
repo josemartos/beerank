@@ -1,8 +1,11 @@
 // User list section
 .userList {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 5vh;
+
+  ul {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .userList_item {

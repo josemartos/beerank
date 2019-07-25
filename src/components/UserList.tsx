@@ -17,9 +17,9 @@ const UserList: FunctionComponent<RouteComponentProps> = () => {
   }, []);
 
   return (
-    <div>
+    <div className="userList">
       <h2 className="pageTitle">Ranking</h2>
-      <ul data-testid="user-list" className="userList">
+      <ul data-testid="user-list">
         {!users.length ? (
           <li>
             <Spinner />
