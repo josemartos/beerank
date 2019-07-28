@@ -1,16 +1,11 @@
-import React, { useState, useEffect, FunctionComponent } from "react";
-import { RouteComponentProps, navigate } from "@reach/router";
+import React, { useState, useEffect } from "react";
+import { navigate } from "@reach/router";
 import axios from "axios";
 import Spinner from "./Spinner";
-import { UserInfo } from "../interfaces";
 import avatarLarge from "../../assets/jpg/avatar-large.jpg";
 
-interface Props {
-  userId: string;
-}
-
-const UserDetails: FunctionComponent<RouteComponentProps<Props>> = props => {
-  const [user, setUser] = useState<UserInfo | undefined>(undefined);
+const UserDetails = props => {
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     if (!props.userId) {
@@ -20,8 +15,8 @@ const UserDetails: FunctionComponent<RouteComponentProps<Props>> = props => {
 
     axios
       .get(`https://jsonplaceholder.typicode.com/users/${props.userId}`)
-      .then(({ data }) => {
-        setUser(data || {});
+      .then(({ data: userInfo }) => {
+        setUser(userInfo || {});
       });
   }, []);
 

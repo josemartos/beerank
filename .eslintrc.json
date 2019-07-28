@@ -1,32 +1,22 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/react"
   ],
   "rules": {
     "react/prop-types": 0,
     "react-hooks/rules-of-hooks": "error",
-    "no-console": "warn",
-    "@typescript-eslint/indent": [2, 2]
+    "no-console": "warn"
   },
-  "plugins": [
-    "react",
-    "import",
-    "jsx-a11y",
-    "react-hooks",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "parser": "babel-eslint",
   "parserOptions": {
-    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2018,
     "sourceType": "module",
-    "project": "tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     }
@@ -39,11 +29,6 @@
   "settings": {
     "react": {
       "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
     }
   }
 }
