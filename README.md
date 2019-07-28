@@ -8,4 +8,4 @@ Personal project used as an object of experimentation to test new technologies, 
 
 ## tech stack
 
-React, Typescript, Jest, Sass, Axios, Parcel, ESlint, Prettier
+React, Jest, Parcel, Sass, PostCSS, ESlint, Prettier
