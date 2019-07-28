@@ -20,8 +20,8 @@ const UserDetails: FunctionComponent<RouteComponentProps<Props>> = props => {
 
     axios
       .get(`https://jsonplaceholder.typicode.com/users/${props.userId}`)
-      .then(({ data: userInfo }) => {
-        setUser(userInfo || {});
+      .then(({ data }) => {
+        setUser(data || {});
       });
   }, []);
 

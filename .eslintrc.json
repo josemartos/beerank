@@ -15,7 +15,6 @@
     "no-console": "warn",
     "@typescript-eslint/indent": [2, 2]
   },
-  "parser": "@typescript-eslint/parser",
   "plugins": [
     "react",
     "import",
@@ -24,8 +23,10 @@
     "@typescript-eslint"
   ],
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2018,
     "sourceType": "module",
+    "project": "tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     }
