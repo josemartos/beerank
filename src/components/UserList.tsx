@@ -2,8 +2,8 @@ import React, { useState, useEffect, FunctionComponent } from "react";
 import { Link, RouteComponentProps } from "@reach/router";
 import axios from "axios";
 import Spinner from "./Spinner";
-import { IUser } from "../interfaces";
-import avatarSmall from "/assets/jpg/avatar-small.jpg";
+import { UserInfo } from "../interfaces";
+import avatarSmall from "../../assets/jpg/avatar-small.jpg";
 
 const UserList: FunctionComponent<RouteComponentProps> = () => {
   const [users, setUsers] = useState([]);
@@ -25,7 +25,7 @@ const UserList: FunctionComponent<RouteComponentProps> = () => {
             <Spinner />
           </li>
         ) : (
-          users.map((user: IUser) => (
+          users.map((user: UserInfo) => (
             <li className="userList_item" key={user.id}>
               <Link to={`/userdetails/${user.id}`} title="See details">
                 <img src={avatarSmall} alt={user.name} />
