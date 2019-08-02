@@ -2,7 +2,7 @@
 
 > React, Jest, Parcel, Sass, PostCSS, ESlint, Prettier
 
-## description
+## motivation
 
 Personal project used as an object of experimentation to test new technologies, libraries, frameworks, techniques, etc.
 
