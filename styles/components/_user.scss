@@ -10,6 +10,7 @@
 
 .userList_item {
   border-bottom: 1px solid $c-grey100;
+  font-size: rem(16px);
 
   a {
     color: $c-black;
@@ -36,7 +37,7 @@
 }
 
 .userList_item_title {
-  font-size: 1.2rem;
+  font-size: rem(18px);
   font-weight: bold;
 }
 
@@ -59,5 +60,10 @@
 }
 
 .userDetails_info {
+  font-size: rem(16px);
   padding: 1rem;
+}
+
+.userDetails_title {
+  font-size: rem(18px);
 }

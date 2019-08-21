@@ -7,7 +7,7 @@ body {
 body {
   color: $font-primary;
   font-family: $font-base;
-  font-size: $font-base-size;
+  font-size: rem($font-base-size);
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 
 .pageTitle {
   color: $c-black;
-  font-size: 2rem;
+  font-size: rem(24px);
   margin-bottom: 1rem;
 }
 
