@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import Spinner from "./components/Spinner";
 import Header from "./components/Header";
-import UserList from "./components/UserList";
+import BeerList from "./components/BeerList";
 
-const UserDetails = lazy(() => import("./components/UserDetails"));
+const BeerDetails = lazy(() => import("./components/BeerDetails"));
 
 const App = () => {
   return (
@@ -15,8 +15,8 @@ const App = () => {
         <Suspense fallback={<Spinner />}>
           <div className="pageContainer">
             <Router>
-              <UserList path="/" />
-              <UserDetails path="/userdetails/:userId" />
+              <BeerList path="/" />
+              <BeerDetails path="/beerdetails/:beerId" />
             </Router>
           </div>
         </Suspense>

@@ -1,5 +1,5 @@
-// User list section
-.userList {
+// Beer list section
+.beerList {
   padding-top: 5vh;
 
   ul {
@@ -8,7 +8,7 @@
   }
 }
 
-.userList_item {
+.beerList_item {
   border-bottom: 1px solid $c-grey100;
   font-size: rem(16px);
 
@@ -36,34 +36,35 @@
   }
 }
 
-.userList_item_title {
+.beerList_item_title {
   font-size: rem(18px);
   font-weight: bold;
 }
 
-// User details section
-.userDetails {
+// Beer details section
+.beerDetails {
   padding-top: 5vh;
 }
 
-.userDetails_content {
+.beerDetails_content {
   display: flex;
 }
 
-.userDetails_avatar {
+.beerDetails_avatar {
   width: 300px;
   height: 300px;
+  flex-shrink: 0;
 
   img {
     border-radius: 5px;
   }
 }
 
-.userDetails_info {
+.beerDetails_info {
   font-size: rem(16px);
   padding: 1rem;
 }
 
-.userDetails_title {
+.beerDetails_title {
   font-size: rem(18px);
 }

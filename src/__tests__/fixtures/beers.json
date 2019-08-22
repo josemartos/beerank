@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "5d5d9da004c6221634e4052b",
+    "name": "Augustiner",
+    "description": "The Augustiner Brewery was first mentioned by name in 1328, established within an Augustianian Monastery which had been settled just outside the Munich city walls in an area called Haberfeld in 1294",
+    "rating": 4,
+    "avatar": "avatarurl"
+  },
+  {
+    "_id": "5d5d9e3fad4bd61634d7e81f",
+    "name": "Berliner Kindl",
+    "description": "Berliner Kindl ist eine Biermarke der zur Oetker-Gruppe gehörenden Berliner-Kindl-Schultheiss-Brauerei.",
+    "rating": 4,
+    "avatar": "avatarurl"
+  },
+  {
+    "_id": "5d5db50ead4bd61634d7e820",
+    "name": "Augustiner",
+    "description": "The Augustiner Brewery was first mentioned by name in 1328, established within an Augustianian Monastery which had been settled just outside the Munich city walls in an area called Haberfeld in 1294",
+    "rating": 3,
+    "avatar": "avatarurl"
+  },
+  {
+    "_id": "5d5db517ad4bd61634d7e821",
+    "name": "Berliner Kindl",
+    "description": "Berliner Kindl ist eine Biermarke der zur Oetker-Gruppe gehörenden Berliner-Kindl-Schultheiss-Brauerei.",
+    "rating": 5,
+    "avatar": "avatarurl"
+  }
+]
