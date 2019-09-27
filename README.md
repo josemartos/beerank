@@ -2,7 +2,11 @@
 
 > React, Jest, Parcel, Sass, PostCSS, ESlint, Prettier
 
-## motivation
+## Description
+
+The idea is to show a list of beers ordered by rating, provided by registered users.
+
+## Motivation
 
 Personal project used as an object of experimentation to test new technologies, libraries, frameworks, techniques, etc.
 
