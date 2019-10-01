@@ -1,5 +1,5 @@
 {
-  "name": "petproject",
+  "name": "beerank",
   "version": "1.0.0",
   "description": "Simple React application",
   "main": "App.js",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josemartos/petproject.git"
+    "url": "git+https://github.com/josemartos/beerank.git"
   },
   "keywords": [],
   "author": "Jose Martos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/josemartos/petproject/issues"
+    "url": "https://github.com/josemartos/beerank/issues"
   },
-  "homepage": "https://github.com/josemartos/petproject#readme",
+  "homepage": "https://github.com/josemartos/beerank#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
